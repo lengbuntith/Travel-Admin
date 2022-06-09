@@ -33,6 +33,12 @@ export default {
     places: [],
     headers: [
       {
+        text: 'ID',
+        align: 'start',
+        sortable: false,
+        value: '_id',
+      },
+      {
         text: 'Thumbnail',
         align: 'start',
         sortable: false,

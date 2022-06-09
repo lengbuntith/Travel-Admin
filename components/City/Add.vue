@@ -81,6 +81,8 @@ export default {
         this.status = ''
         this.message = ''
         this.file = ''
+        this.name = ''
+        this.description = ''
       }
     },
   },

@@ -48,8 +48,8 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://movieez.ml',
-    //baseURL: 'http://localhost:3001',
+    //baseURL: 'https://movieez.ml',
+    baseURL: 'http://localhost:3001',
   },
 
   auth: {
