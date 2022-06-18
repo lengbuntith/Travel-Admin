@@ -13,8 +13,8 @@
         <Add />
       </v-toolbar>
     </template>
-    <template #[`item.thumbnail`]="{ item }">
-      <img width="100" :src="item.thumbnail" :alt="item.name" />
+    <template #[`item.image`]="{ item }">
+      <img width="100" :src="item.image" :alt="item.name" />
     </template>
 
     <template #[`item.actions`]="{ item }">
@@ -38,7 +38,7 @@ export default {
         text: 'Thumbnail',
         align: 'start',
         sortable: false,
-        value: 'thumbnail',
+        value: 'image',
       },
       { text: 'Name', value: 'name' },
       { text: 'Description', value: 'description' },
@@ -46,8 +46,11 @@ export default {
     ],
     newCity: {
       name: '',
-      thumbnail: '',
+      thumbnail: [],
       description: '',
+      image: '',
+      lat: '',
+      lng: '',
     },
   }),
   created() {

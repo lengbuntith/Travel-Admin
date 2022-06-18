@@ -170,6 +170,12 @@ export default {
   },
 
   methods: {
+    //concat string reduce resolution image to 60-80kb
+    addStr(str, index, stringToAdd) {
+      return (
+        str.substring(0, index) + stringToAdd + str.substring(index, str.length)
+      )
+    },
     async save() {
       this.isLoading = true
 
@@ -181,7 +187,7 @@ export default {
           let formData = new FormData()
           formData.append('file', this.file)
           const res = await this.$axios.post('/upload-image', formData)
-          thumbnail_url = res.data.data
+          thumbnail_url = this.addStr(res.data.data, 50, 'w_800/h_600/q_50/')
         }
 
         if (this.files) {
