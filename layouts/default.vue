@@ -91,11 +91,11 @@ export default {
           to: '/event',
         },
 
-        {
-          icon: 'mdi-tools',
-          title: 'Setting',
-          to: '/setting',
-        },
+        // {
+        //   icon: 'mdi-tools',
+        //   title: 'Setting',
+        //   to: '/setting',
+        // },
       ],
       miniVariant: false,
       right: true,

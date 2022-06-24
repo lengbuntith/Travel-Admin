@@ -32,6 +32,7 @@ export default {
   methods: {
     deleteConfirm() {
       this.isLoading = true
+      console.log(this.id)
       this.$axios.post(`/city/delete/${this.id}`).then(() => {
         this.$nuxt.$emit('getCity')
         this.isLoading = false
