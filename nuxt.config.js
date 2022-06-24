@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - dashbord',
-    title: 'dashbord',
+    titleTemplate: 'Travel Dashboard',
+    title: 'Dashboard',
     htmlAttrs: {
       lang: 'en',
     },

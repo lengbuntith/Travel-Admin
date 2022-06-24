@@ -60,7 +60,7 @@
                   color="primary"
                   >Sign In</v-btn
                 >
-                <v-btn to="/forgot" text>Forget Password ?</v-btn>
+                <!-- <v-btn to="/forgot" text>Forget Password ?</v-btn> -->
               </div>
             </form>
           </v-card>
